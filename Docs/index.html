@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #menu {
+            flex-basis: 20%;
+            background: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-right: 5px solid black;
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            background: #ddd;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a href="subdirectory1/index.html">Downloads</a></li>
+                <li><a href="subdirectory2/index.html">Documentation</a></li>
+                <li><a href="subdirectory3/index.html">Other projects</a></li>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <br> <br> <br> <br> <br>
+                <li><a href="https://bumpscosity.github.io/Test/">Landing page</a></li>
+                <li><a href="Home/">Home</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>Here are the docs</h1>
+            <p>These will help you use it.</p> <br>
+            <p>The basics:</p>
+            <p>`_start:` Is used to tell the parser where the program starts.</p>
+            <p>`_end` Is used to tell the parser where the program ends.</p>
+        </div>
+    </div>
+</body>
+</html>

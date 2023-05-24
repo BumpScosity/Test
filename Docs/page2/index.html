@@ -27,15 +27,6 @@
             flex-grow: 1;
             padding: 20px;
         }
-        
-        text {
-            color: rgb(24, 24, 24);
-            transition: color 0.3s ease;
-        }
-
-        text:hover {
-            color: rgb(58, 58, 58);
-        }
 
         ul {
             list-style-type: none;
@@ -88,15 +79,21 @@
 
         <div id="content">
             <h1>Page2, Functions.</h1>
-            <text>The basics:</text>
-            <text>`_start:` Is used to tell the parser where the program starts.</p>
-            <text>`_end` Is used to tell the parser where the program ends.</p>
-            <text>Example:</text>
+            <p>The basics:</p>
+            <p>`define function-name` Is used to tell the parser where a function starts, and what its name is.</p>
+            <p>`endef` Is used to tell the parser that a function ended.</p>
+            <p>`$(call function-name)` Is used to call a function by its name</p>
+            <p>Example:</p>
             <code>
             <p>_start:</p>
-            <p>echo This is a message!</p>
+            <p>$(call say_something)</p>
             <p>_end</p>
+            <p></p>
+            <p>define say_something</p>
+            <p>echo Something</p>
+            <p>endef</p>
             </code>
+            <a href="https://bumpscosity.github.io/Test/Docs/page3">Next page</a>
         </div>
     </div>
 </body>

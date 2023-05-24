@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Home Page</title>
+    <title>My Website</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #menu {
+            flex-basis: 20%;
+            background: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-right: 5px solid black;
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            background: #ddd;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to my home Page</h1>
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a href="subdirectory1/index.html">Downloads</a></li>
+                <li><a href="subdirectory2/index.html">Documentation</a></li>
+                <li><a href="subdirectory3/index.html">Other projects</a></li>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <br> <br> <br> <br> <br>
+                <li><a href="subdirectory4/index.html">etc.</a></li>
+                <li><a href="Home/">Home</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>Welcome to the home page</h1>
+            <p>I will talk a bit about the project now.</p> <br>
+            <p>I will talk a bit about the project now.</p>
+        </div>
+    </div>
 </body>
 </html>

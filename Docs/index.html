@@ -5,6 +5,7 @@
     <style>
         body {
             display: flex;
+            background-color: #ecf8ff;
             margin: 0;
         }
 
@@ -15,7 +16,7 @@
 
         #menu {
             flex-basis: 20%;
-            background: #f1f1f1;
+            background: #d3dfe5;
             display: flex;
             flex-direction: column;
             padding: 20px;
@@ -25,6 +26,15 @@
         #content {
             flex-grow: 1;
             padding: 20px;
+        }
+        
+        text {
+            color: rgb(24, 24, 24);
+            transition: color 0.3s ease;
+        }
+
+        text:hover {
+            color: rgb(58, 58, 58);
         }
 
         ul {
@@ -41,8 +51,23 @@
             padding: 10px;
             text-decoration: none;
             color: #000;
+            
             background: #ddd;
             border-radius: 5px;
+            border: 1px solid black;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #afafaf;
+        }
+
+        code {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #88ff92; 
+            background-color: #323232;
+            border-radius: 1px;
             border: 1px solid black;
         }
     </style>
@@ -51,22 +76,20 @@
     <div id="container">
         <div id="menu">
             <ul>
-                <li><a href="subdirectory1/index.html">Downloads</a></li>
-                <li><a href="subdirectory2/index.html">Documentation</a></li>
-                <li><a href="subdirectory3/index.html">Other projects</a></li>
+                <li><a href="https://bumpscosity.github.io/Test/Downloads">Downloads</a></li>
+                <li><a href="https://bumpscosity.github.io/Test/Docs">Documentation</a></li>
+                <li><a href="https://github.com/BumpScosity">Other projects</a></li>
                 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
                 <br> <br> <br> <br> <br>
                 <li><a href="https://bumpscosity.github.io/Test/">Landing page</a></li>
-                <li><a href="Home/">Home</a></li>
+                <li><a href="https://bumpscosity.github.io/Test/Home/">Home</a></li>
             </ul>
         </div>
 
         <div id="content">
-            <h1>Here are the docs</h1>
-            <p>These will help you use it.</p> <br>
-            <p>The basics:</p>
-            <p>`_start:` Is used to tell the parser where the program starts.</p>
-            <p>`_end` Is used to tell the parser where the program ends.</p>
+            <h1>The documentation</h1>
+            <p>Here you can learn more about the tool</p>
+            <p>Press the button below to proceed to the first page</p>
         </div>
     </div>
 </body>
